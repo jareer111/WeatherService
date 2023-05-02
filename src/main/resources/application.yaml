@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/weatherdb
+    username: postgres
+    password: 123
+    initialize: true
+  sql:
+    init:
+      mode: always
+
+app:
+  jwt:
+    secret: Adnnadnjnjf2373278b78cb2y
+
